@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>ValerIA — Roadmap 2026</title>
+<title>ValerIA — Roadmap Gerencial 2026</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -55,36 +55,36 @@ body {
 .db-yell  { background: #FFB80010; border-color: #FFB80030; color: #FFB800; }
 .db-green { background: #00D68F10; border-color: #00D68F30; color: #00D68F; }
 
-/* ── VALERIA HERO BLOCK ── */
+/* ── VALERIA HERO ── */
 .valeria-hero {
   background: linear-gradient(135deg, #0a2a1a 0%, #091e2e 100%);
-  border: 1px solid #00D68F33;
-  border-radius: 14px; padding: 16px 20px;
+  border: 1px solid #00D68F33; border-radius: 14px; padding: 18px 20px;
   margin-bottom: 14px; position: relative; z-index: 1;
-  display: grid; grid-template-columns: auto 1fr auto;
-  gap: 20px; align-items: start;
+  display: grid; grid-template-columns: 200px 1fr 280px; gap: 24px; align-items: start;
 }
 .valeria-hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #00D68F, #00C6E0); border-radius: 14px 14px 0 0; }
 .vh-tag {
   background: #00D68F18; border: 1px solid #00D68F44; color: #00D68F;
   font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 1px;
   text-transform: uppercase; padding: 3px 10px; border-radius: 20px;
-  display: inline-block; margin-bottom: 6px;
+  display: inline-block; margin-bottom: 8px;
 }
-.vh-title { font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 800; color: #e8f4ff; margin-bottom: 2px; }
-.vh-sub { font-size: 11px; color: #5a80a0; }
+.vh-title { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; color: #e8f4ff; margin-bottom: 4px; }
+.vh-sub { font-size: 11px; color: #5a80a0; line-height: 1.5; }
 .vh-center { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .vh-stat {
   background: #060f1e; border: 1px solid #1c3050; border-radius: 8px;
-  padding: 8px 12px; text-align: center;
+  padding: 10px 12px;
 }
-.vh-stat-val { font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 700; color: #00D68F; }
-.vh-stat-lbl { font-size: 9px; color: #5a80a0; margin-top: 2px; line-height: 1.3; }
-.vh-pills { display: flex; flex-wrap: wrap; gap: 5px; align-content: flex-start; }
-.vpill {
-  font-family: 'DM Mono', monospace; font-size: 9px;
-  background: #060f1e; border: 1px solid #1c3050;
-  color: #00D68F; padding: 3px 9px; border-radius: 5px;
+.vh-stat-val { font-size: 12px; font-weight: 700; color: #00D68F; margin-bottom: 3px; }
+.vh-stat-lbl { font-size: 10px; color: #5a80a0; line-height: 1.4; }
+.vh-right { display: flex; flex-direction: column; gap: 8px; }
+.vh-right-title { font-family: 'DM Mono', monospace; font-size: 9px; color: #00C6E0; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
+.vh-caps { display: flex; flex-wrap: wrap; gap: 5px; }
+.vh-cap {
+  background: #060f1e; border: 1px solid #00D68F22;
+  color: #00D68F; font-size: 10px; font-weight: 500;
+  padding: 4px 10px; border-radius: 6px;
 }
 
 /* ── PROGRESS ── */
@@ -92,7 +92,8 @@ body {
 .prog-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
 .prog-pct { font-family: 'Syne', sans-serif; font-size: 20px; font-weight: 800; color: #00C6E0; }
 .prog-info { font-size: 10px; color: #5a80a0; margin-left: 8px; }
-.prog-stats { display: flex; gap: 20px; }
+.prog-stats { display: flex; gap: 28px; }
+.ps { text-align: center; }
 .ps-val { font-weight: 700; font-size: 14px; color: #e8f4ff; }
 .ps-lbl { font-size: 9px; color: #5a80a0; margin-top: 1px; }
 .prog-bar-bg { background: #060f1e; border: 1px solid #1c3050; border-radius: 6px; height: 9px; overflow: hidden; }
@@ -116,7 +117,7 @@ body {
 
 /* ── TIMELINE ── */
 .timeline { display: flex; gap: 7px; margin-bottom: 12px; position: relative; z-index: 1; align-items: stretch; }
-.ph { border-radius: 10px; border: 1px solid; padding: 10px; position: relative; overflow: hidden; flex-shrink: 0; display: flex; flex-direction: column; }
+.ph { border-radius: 10px; border: 1px solid; padding: 12px 11px; position: relative; overflow: hidden; flex-shrink: 0; display: flex; flex-direction: column; }
 .ph::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
 .done { background: rgba(0,214,143,.05); border-color: rgba(0,214,143,.2); }
 .done::before { background: #00D68F; }
@@ -124,20 +125,21 @@ body {
 .wip::before  { background: #FFB800; }
 .todo { background: rgba(0,198,224,.03); border-color: rgba(0,198,224,.15); }
 .todo::before { background: #00C6E0; }
-.v2   { background: rgba(28,48,80,.3); border-color: rgba(28,48,80,.7); opacity: .7; }
-.v2::before   { background: #3a5a7a; }
 .critical { background: rgba(255,77,109,.04); border-color: rgba(255,77,109,.2); }
 .critical::before { background: #FF4D6D; }
+.v2   { background: rgba(28,48,80,.3); border-color: rgba(28,48,80,.7); opacity: .7; }
+.v2::before   { background: #3a5a7a; }
 
-/* widths — total 1600 - 72px padding = 1528, 9 gaps × 7 = 63, content = 1465 */
-.w-190 { width: 175px; }
-.w-135 { width: 130px; }
-.w-125 { width: 148px; }
-.w-155 { width: 148px; }
-.w-165 { width: 155px; }
-.w-150 { width: 145px; }
+.w-185 { width: 185px; }
+.w-160 { width: 160px; }
+.w-150 { width: 150px; }
+.w-145 { width: 145px; }
+.w-140 { width: 140px; }
+.w-130 { width: 130px; }
+.w-175 { width: 175px; }
+.w-120 { width: 120px; }
 
-.pbadge { display: inline-block; font-family: 'DM Mono', monospace; font-size: 8px; font-weight: 500; letter-spacing: .5px; text-transform: uppercase; padding: 2px 7px; border-radius: 10px; border: 1px solid; margin-bottom: 5px; }
+.pbadge { display: inline-block; font-family: 'DM Mono', monospace; font-size: 8px; font-weight: 500; letter-spacing: .5px; text-transform: uppercase; padding: 2px 7px; border-radius: 10px; border: 1px solid; margin-bottom: 6px; }
 .bd { background: rgba(0,214,143,.12); color: #00D68F; border-color: rgba(0,214,143,.3); }
 .bw { background: rgba(255,184,0,.12); color: #FFB800; border-color: rgba(255,184,0,.3); }
 .bt { background: rgba(0,198,224,.1);  color: #00C6E0; border-color: rgba(0,198,224,.25); }
@@ -145,16 +147,17 @@ body {
 .br { background: rgba(255,77,109,.1); color: #FF4D6D; border-color: rgba(255,77,109,.3); }
 
 .pnum   { font-family: 'DM Mono', monospace; font-size: 8px; color: #3a5a7a; margin-bottom: 2px; }
-.ptitle { font-family: 'Syne', sans-serif; font-size: 11px; font-weight: 700; color: #e8f4ff; line-height: 1.2; margin-bottom: 3px; }
-.pdate  { font-family: 'DM Mono', monospace; font-size: 8px; margin-bottom: 5px; }
-.done .pdate { color: #00D68F; }
-.wip  .pdate { color: #FFB800; }
-.todo .pdate { color: #00C6E0; }
+.ptitle { font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 700; color: #e8f4ff; line-height: 1.2; margin-bottom: 3px; }
+.pdate  { font-family: 'DM Mono', monospace; font-size: 8px; margin-bottom: 6px; }
+.done .pdate     { color: #00D68F; }
+.wip  .pdate     { color: #FFB800; }
+.todo .pdate     { color: #00C6E0; }
 .critical .pdate { color: #FF4D6D; }
-.v2   .pdate { color: #3a5a7a; }
-.pbullets { list-style: none; display: flex; flex-direction: column; gap: 3px; margin-top: auto; }
-.pbullets li { font-size: 9px; color: #5a80a0; padding-left: 10px; position: relative; line-height: 1.35; }
-.pbullets li::before { content: '▸'; position: absolute; left: 0; font-size: 8px; }
+.v2   .pdate     { color: #3a5a7a; }
+
+.pbullets { list-style: none; display: flex; flex-direction: column; gap: 4px; margin-top: auto; }
+.pbullets li { font-size: 10px; color: #5a80a0; padding-left: 12px; position: relative; line-height: 1.4; }
+.pbullets li::before { content: '▸'; position: absolute; left: 0; font-size: 9px; }
 .done .pbullets li::before     { color: #00D68F; }
 .wip  .pbullets li::before     { color: #FFB800; }
 .todo .pbullets li::before     { color: #00C6E0; }
@@ -162,22 +165,30 @@ body {
 
 /* ── BOTTOM ── */
 .bottom { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 8px; position: relative; z-index: 1; margin-bottom: 12px; }
-.bcard { background: #0a1525; border: 1px solid #1c3050; border-radius: 10px; padding: 12px; }
-.bcard-title { font-family: 'DM Mono', monospace; font-size: 8px; color: #00C6E0; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid #1c3050; }
-.int-grid { display: flex; flex-wrap: wrap; gap: 4px; }
-.ibadge { display: flex; align-items: center; gap: 5px; background: #060f1e; border: 1px solid #1c3050; border-radius: 5px; padding: 3px 8px; font-size: 9px; font-weight: 600; color: #e8f4ff; }
-.idot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-.stack-wrap { display: flex; flex-wrap: wrap; gap: 3px; }
-.sbadge { background: #060f1e; border: 1px solid #1c3050; border-radius: 4px; padding: 2px 7px; font-family: 'DM Mono', monospace; font-size: 8px; color: #00C6E0; }
-.dif-list { display: flex; flex-direction: column; gap: 7px; }
-.dif-row  { display: flex; align-items: flex-start; gap: 7px; }
-.dif-icon { width: 22px; height: 22px; flex-shrink: 0; background: rgba(0,198,224,.08); border: 1px solid rgba(0,198,224,.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 11px; }
-.dif-name { font-size: 10px; font-weight: 600; color: #e8f4ff; }
-.dif-desc { font-size: 9px; color: #5a80a0; line-height: 1.3; margin-top: 1px; }
-.met-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
-.met-item { background: #060f1e; border: 1px solid #1c3050; border-radius: 8px; padding: 9px; text-align: center; }
-.met-val { font-family: 'Syne', sans-serif; font-size: 19px; font-weight: 800; color: #00C6E0; line-height: 1; }
-.met-lbl { font-size: 8px; color: #5a80a0; margin-top: 2px; line-height: 1.3; }
+.bcard { background: #0a1525; border: 1px solid #1c3050; border-radius: 10px; padding: 14px; }
+.bcard-title { font-family: 'DM Mono', monospace; font-size: 8px; color: #00C6E0; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; padding-bottom: 7px; border-bottom: 1px solid #1c3050; }
+
+.int-grid { display: flex; flex-wrap: wrap; gap: 5px; }
+.ibadge { display: flex; align-items: center; gap: 6px; background: #060f1e; border: 1px solid #1c3050; border-radius: 6px; padding: 5px 10px; font-size: 10px; font-weight: 600; color: #e8f4ff; }
+.idot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+.dif-list { display: flex; flex-direction: column; gap: 9px; }
+.dif-row  { display: flex; align-items: flex-start; gap: 8px; }
+.dif-icon { width: 24px; height: 24px; flex-shrink: 0; background: rgba(0,198,224,.08); border: 1px solid rgba(0,198,224,.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.dif-name { font-size: 11px; font-weight: 600; color: #e8f4ff; }
+.dif-desc { font-size: 10px; color: #5a80a0; line-height: 1.3; margin-top: 1px; }
+
+.casos-list { display: flex; flex-direction: column; gap: 9px; }
+.caso-row { display: flex; align-items: flex-start; gap: 8px; }
+.caso-icon { width: 24px; height: 24px; flex-shrink: 0; background: rgba(0,214,143,.08); border: 1px solid rgba(0,214,143,.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.caso-name { font-size: 11px; font-weight: 600; color: #e8f4ff; }
+.caso-desc { font-size: 10px; color: #5a80a0; line-height: 1.3; margin-top: 1px; }
+
+.seg-list { display: flex; flex-direction: column; gap: 7px; }
+.seg-row { display: flex; align-items: flex-start; gap: 8px; }
+.seg-icon { width: 24px; height: 24px; flex-shrink: 0; background: rgba(255,184,0,.08); border: 1px solid rgba(255,184,0,.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.seg-name { font-size: 11px; font-weight: 600; color: #e8f4ff; }
+.seg-desc { font-size: 10px; color: #5a80a0; line-height: 1.3; margin-top: 1px; }
 
 /* ── DISCLAIMER ── */
 .disclaimer {
@@ -186,7 +197,7 @@ body {
   position: relative; z-index: 1; margin-bottom: 12px;
 }
 .disc-title { font-family: 'DM Mono', monospace; font-size: 8px; color: #FFB800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 5px; }
-.disc-text { font-size: 9px; color: #5a80a0; line-height: 1.6; }
+.disc-text { font-size: 9px; color: #5a80a0; line-height: 1.7; }
 
 /* ── FOOTER ── */
 .footer { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid #1c3050; position: relative; z-index: 1; }
@@ -204,8 +215,8 @@ body {
   <!-- HEADER -->
   <div class="hdr">
     <div class="hdr-left">
-      <h1>ValerIA · Roadmap Estratégico 2026</h1>
-      <p class="hdr-sub">Plataforma de IA conversacional empresarial · Gestionada por Bestsol AI Platform · Bestsol Perú</p>
+      <h1>ValerIA · Plan de Desarrollo Estratégico 2026</h1>
+      <p class="hdr-sub">Asistente de Inteligencia Artificial para atención al cliente · Gestionado por Bestsol AI Platform · Bestsol Perú</p>
     </div>
     <div class="hdr-right">
       <span class="dbadge db-blue">Inicio: 30/04/2026</span>
@@ -217,27 +228,61 @@ body {
   <!-- VALERIA HERO -->
   <div class="valeria-hero">
     <div>
-      <span class="vh-tag">✓ En Producción</span>
+      <span class="vh-tag">✓ Operativo en Producción</span>
       <div class="vh-title">ValerIA</div>
-      <div class="vh-sub">Bot IA conversacional activo<br>en WhatsApp Business</div>
+      <div class="vh-sub">
+        Asistente de IA activo atendiendo<br>
+        clientes por WhatsApp Business.<br><br>
+        Responde consultas, captura leads,<br>
+        genera tickets y escala casos<br>
+        complejos a agentes humanos.
+      </div>
     </div>
     <div class="vh-center">
-      <div class="vh-stat"><div class="vh-stat-val">Yeastar PBX</div><div class="vh-stat-lbl">→ n8n → Dify → WhatsApp</div></div>
-      <div class="vh-stat"><div class="vh-stat-val">GPT-4o-mini</div><div class="vh-stat-lbl">Azure OpenAI · Dify v1.13.3</div></div>
-      <div class="vh-stat"><div class="vh-stat-val">3 estados</div><div class="vh-stat-lbl">Cierre por inactividad automático</div></div>
-      <div class="vh-stat"><div class="vh-stat-val">EspoCRM</div><div class="vh-stat-lbl">Leads · Tickets · Reclamos activos</div></div>
-      <div class="vh-stat"><div class="vh-stat-val">LeadValerIA</div><div class="vh-stat-lbl">Captura: nombre, empresa, RUC, sector</div></div>
-      <div class="vh-stat"><div class="vh-stat-val">TicketValerIA</div><div class="vh-stat-lbl">Soporte técnico con número de ticket</div></div>
-      <div class="vh-stat"><div class="vh-stat-val">ReclamoValerIA</div><div class="vh-stat-lbl">Reclamos formales con categoría</div></div>
-      <div class="vh-stat"><div class="vh-stat-val">1550 chars</div><div class="vh-stat-lbl">Truncado por límite Yeastar PBX</div></div>
+      <div class="vh-stat">
+        <div class="vh-stat-val">Atención 24/7</div>
+        <div class="vh-stat-lbl">Responde por WhatsApp sin intervención humana en todo momento</div>
+      </div>
+      <div class="vh-stat">
+        <div class="vh-stat-val">Captura de Leads</div>
+        <div class="vh-stat-lbl">Registra datos del cliente automáticamente en el CRM</div>
+      </div>
+      <div class="vh-stat">
+        <div class="vh-stat-val">Tickets de Soporte</div>
+        <div class="vh-stat-lbl">Genera casos de soporte técnico con número de seguimiento</div>
+      </div>
+      <div class="vh-stat">
+        <div class="vh-stat-val">Reclamos Formales</div>
+        <div class="vh-stat-lbl">Registra reclamos con categoría y detalle en el sistema</div>
+      </div>
+      <div class="vh-stat">
+        <div class="vh-stat-val">Derivación Inteligente</div>
+        <div class="vh-stat-lbl">Escala automáticamente a un agente cuando el caso lo requiere</div>
+      </div>
+      <div class="vh-stat">
+        <div class="vh-stat-val">Cierre Automático</div>
+        <div class="vh-stat-lbl">Gestiona conversaciones inactivas en 3 etapas sin intervención</div>
+      </div>
+      <div class="vh-stat">
+        <div class="vh-stat-val">Base de Conocimiento</div>
+        <div class="vh-stat-lbl">Responde con información del catálogo de productos Bestsol Perú</div>
+      </div>
+      <div class="vh-stat">
+        <div class="vh-stat-val">Anti-duplicados</div>
+        <div class="vh-stat-lbl">Verifica existencia antes de crear registros en el CRM</div>
+      </div>
     </div>
-    <div class="vh-pills">
-      <span class="vpill">Anti-duplicados EspoCRM</span>
-      <span class="vpill">respuesta_cliente + debe_derivar</span>
-      <span class="vpill">Code Node Python bug Azure fix</span>
-      <span class="vpill">KB catálogo Bestsol Perú</span>
-      <span class="vpill">top_k=10 · híbrido 0.5/0.5</span>
-      <span class="vpill">RAG activo en producción</span>
+    <div class="vh-right">
+      <div class="vh-right-title">Tecnología que lo impulsa</div>
+      <div class="vh-caps">
+        <span class="vh-cap">Inteligencia Artificial Generativa</span>
+        <span class="vh-cap">Motor de lenguaje natural avanzado</span>
+        <span class="vh-cap">Búsqueda semántica en documentos</span>
+        <span class="vh-cap">Integración nativa con CRM</span>
+        <span class="vh-cap">WhatsApp Business API</span>
+        <span class="vh-cap">Infraestructura en la nube (Azure)</span>
+        <span class="vh-cap">Panel de administración web</span>
+      </div>
     </div>
   </div>
 
@@ -246,12 +291,12 @@ body {
     <div class="prog-top">
       <div>
         <span class="prog-pct">60% de Avance</span>
-        <span class="prog-info">· Bestsol AI Platform — 4 de 9 fases completadas · 2 en curso</span>
+        <span class="prog-info">· Panel de administración — 6 de 10 etapas completadas · 2 en desarrollo activo</span>
       </div>
       <div class="prog-stats">
-        <div><div class="ps-val">Sem. 6/23</div><div class="ps-lbl">Tiempo transcurrido</div></div>
-        <div><div class="ps-val">26%</div><div class="ps-lbl">Del tiempo total</div></div>
-        <div><div class="ps-val">17 sem.</div><div class="ps-lbl">Restantes al MVP</div></div>
+        <div class="ps"><div class="ps-val">Semana 6</div><div class="ps-lbl">de 23 en total</div></div>
+        <div class="ps"><div class="ps-val">26%</div><div class="ps-lbl">Del tiempo total</div></div>
+        <div class="ps"><div class="ps-val">17 semanas</div><div class="ps-lbl">Restantes al MVP</div></div>
       </div>
     </div>
     <div class="prog-bar-bg"><div class="prog-bar-fill"></div></div>
@@ -265,168 +310,168 @@ body {
   <!-- LEGEND -->
   <div class="legend">
     <div class="leg-item"><div class="leg-dot" style="background:#00D68F"></div>Completado</div>
-    <div class="leg-item"><div class="leg-dot" style="background:#FFB800"></div>En curso</div>
-    <div class="leg-item"><div class="leg-dot" style="background:#00C6E0"></div>Pendiente MVP</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#FFB800"></div>En desarrollo</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#00C6E0"></div>Próximas etapas</div>
     <div class="leg-item"><div class="leg-dot" style="background:#FF4D6D"></div>Hito crítico</div>
-    <div class="leg-item"><div class="leg-dot" style="background:#3a5a7a"></div>Fuera del MVP (v2)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:#3a5a7a"></div>Segunda fase post-lanzamiento</div>
   </div>
 
   <!-- PLATFORM LABEL -->
-  <div class="platform-label">Bestsol AI Platform — Panel de Gestión</div>
+  <div class="platform-label">Bestsol AI Platform — Panel de Administración y Gestión</div>
 
   <!-- TIMELINE -->
   <div class="timeline">
 
-    <!-- F1 -->
-    <div class="ph done w-190">
+    <!-- E1 -->
+    <div class="ph done w-185">
       <span class="pbadge bd">✓ Completado</span>
-      <div class="pnum">FASE 1 · Sem 1–2</div>
-      <div class="ptitle">Infraestructura y Auth</div>
+      <div class="pnum">ETAPA 1 · Semanas 1–2</div>
+      <div class="ptitle">Base Tecnológica y Acceso Seguro</div>
       <div class="pdate">30/04 → 16/05/2026</div>
       <ul class="pbullets">
-        <li>Monorepo Next.js 14 · Turborepo · pnpm</li>
-        <li>Docker Compose · Nginx · GitHub Actions</li>
-        <li>NextAuth.js · JWT · middleware de rutas</li>
-        <li>Usuario admin operativo</li>
+        <li>Plataforma web construida y funcional</li>
+        <li>Sistema de acceso con usuario y contraseña</li>
+        <li>Servidor configurado con respaldos automáticos</li>
+        <li>Despliegue automatizado ante cualquier cambio</li>
       </ul>
     </div>
 
-    <!-- F2 -->
-    <div class="ph done w-150">
+    <!-- E2 -->
+    <div class="ph done w-175">
       <span class="pbadge bd">✓ Completado</span>
-      <div class="pnum">FASE 2 · Sem 3</div>
-      <div class="ptitle">Multi-Tenancy y RBAC</div>
+      <div class="pnum">ETAPA 2 · Semana 3</div>
+      <div class="ptitle">Gestión de Clientes y Permisos</div>
       <div class="pdate">16/05 → 23/05/2026</div>
       <ul class="pbullets">
-        <li>Organizations · Memberships</li>
-        <li>Roles: OWNER/ADMIN/MANAGER/VIEWER</li>
-        <li>15 tablas Prisma · RLS PostgreSQL</li>
-        <li>Aislamiento total por tenant</li>
+        <li>Cada cliente tiene su espacio aislado e independiente</li>
+        <li>Roles de acceso: Dueño · Administrador · Gestor · Lector</li>
+        <li>Datos de un cliente nunca visibles para otro</li>
+        <li>Seguridad garantizada a nivel de base de datos</li>
       </ul>
     </div>
 
-    <!-- F3 -->
-    <div class="ph done w-165">
+    <!-- E3 -->
+    <div class="ph done w-175">
       <span class="pbadge bd">✓ Completado</span>
-      <div class="pnum">FASE 3 · Sem 4–5</div>
-      <div class="ptitle">Integración Dify + Bot CRUD</div>
+      <div class="pnum">ETAPA 3 · Semanas 4–5</div>
+      <div class="ptitle">Gestión de Bots desde el Panel</div>
       <div class="pdate">23/05 → 30/05/2026</div>
       <ul class="pbullets">
-        <li>Cliente Dify tipado (KnowledgeBaseClient)</li>
-        <li>CRUD completo de bots · difyAppId requerido</li>
-        <li>Sync system prompts panel → Dify</li>
-        <li>Proxy URLs internas Dify implementado</li>
+        <li>Crear, editar y eliminar bots desde el panel web</li>
+        <li>Configurar el comportamiento del bot sin conocimientos técnicos</li>
+        <li>Motor de IA completamente oculto al cliente final</li>
+        <li>Sincronización automática de instrucciones al bot</li>
       </ul>
     </div>
 
-    <!-- F4 -->
-    <div class="ph done w-165">
+    <!-- E4 -->
+    <div class="ph done w-175">
       <span class="pbadge bd">✓ Completado</span>
-      <div class="pnum">FASE 4 · Sem 5–6</div>
-      <div class="ptitle">Knowledge Base Management</div>
+      <div class="pnum">ETAPA 4 · Semanas 5–6</div>
+      <div class="ptitle">Base de Conocimiento del Bot</div>
       <div class="pdate">30/05 → 05/06/2026</div>
       <ul class="pbullets">
-        <li>Upload: txt · pdf · md · docx · html</li>
-        <li>Auto-creación datasets en Dify</li>
-        <li>Polling sync estado cada 5 segundos</li>
-        <li>Dataset-to-app linking · Draft API</li>
+        <li>Subir documentos que el bot usará para responder</li>
+        <li>Formatos soportados: PDF · Word · HTML · texto plano</li>
+        <li>Procesamiento automático y actualización en tiempo real</li>
+        <li>Descarga segura de documentos desde el panel</li>
       </ul>
     </div>
 
-    <!-- F5 EN CURSO -->
-    <div class="ph wip w-155">
-      <span class="pbadge bw">⟳ En Curso</span>
-      <div class="pnum">FASE 5 · Sem 7–8</div>
-      <div class="ptitle">Multi-KB Switch por Bot</div>
+    <!-- E5 EN CURSO -->
+    <div class="ph wip w-160">
+      <span class="pbadge bw">⟳ En Desarrollo</span>
+      <div class="pnum">ETAPA 5 · Semanas 7–8</div>
+      <div class="ptitle">Múltiples Bases de Conocimiento por Bot</div>
       <div class="pdate">09/06 → 20/06/2026</div>
       <ul class="pbullets">
-        <li>N bases de conocimiento por bot</li>
-        <li>Cliente activa KB desde el panel</li>
-        <li>Tabla BotKnowledgeBase · isActive</li>
-        <li>Sync automático Dify Draft API</li>
+        <li>Un bot puede tener varias bases de conocimiento</li>
+        <li>El administrador activa la que necesita desde el panel</li>
+        <li>Permite adaptar el bot a distintos contextos o campañas</li>
+        <li>Cambio de base sin interrumpir el servicio</li>
       </ul>
     </div>
 
     <!-- DOSIER EN CURSO -->
-    <div class="ph wip w-150">
-      <span class="pbadge bw">⟳ En Curso</span>
-      <div class="pnum">DOSIER SEGURIDAD · Continuo</div>
-      <div class="ptitle">Doc. Técnico Oficial</div>
-      <div class="pdate">Bosquejo: 13/06</div>
+    <div class="ph wip w-160">
+      <span class="pbadge bw">⟳ En Desarrollo</span>
+      <div class="pnum">DOSIER DE SEGURIDAD · Continuo</div>
+      <div class="ptitle">Documentación Oficial de Seguridad</div>
+      <div class="pdate">Primer borrador: 13/06 · Entrega final con el MVP</div>
       <ul class="pbullets">
-        <li>Estilo Jusan/AttendIA como referencia</li>
-        <li>Arquitectura · redes · DMZ · WAF</li>
-        <li>Riesgos MAGERIT · salvaguardas</li>
-        <li>ISO 27001 · ENS · trazabilidad IA</li>
+        <li>Documento técnico oficial de la plataforma</li>
+        <li>Arquitectura · gestión de riesgos · cumplimiento normativo</li>
+        <li>Estándar internacional ISO 27001</li>
+        <li>Se construye en paralelo y entrega con el producto final</li>
       </ul>
     </div>
 
-    <!-- F6 -->
-    <div class="ph todo w-135">
-      <span class="pbadge bt">→ Pendiente</span>
-      <div class="pnum">FASE 6 · Sem 9–10</div>
-      <div class="ptitle">Analytics y Reportes</div>
+    <!-- E6 -->
+    <div class="ph todo w-150">
+      <span class="pbadge bt">→ Próxima etapa</span>
+      <div class="pnum">ETAPA 6 · Semanas 9–10</div>
+      <div class="ptitle">Reportes y Estadísticas</div>
       <div class="pdate">22/06 → 11/07/2026</div>
       <ul class="pbullets">
-        <li>Dashboard KPIs en tiempo real</li>
-        <li>Métricas por bot · canal · período</li>
-        <li>3 niveles: cliente / proveedor / admin</li>
-        <li>Exportación CSV y PDF</li>
+        <li>Panel de indicadores de rendimiento del bot</li>
+        <li>Estadísticas por bot, período y canal de atención</li>
+        <li>Vistas diferenciadas por cliente y administrador</li>
+        <li>Exportación de reportes en Excel y PDF</li>
       </ul>
     </div>
 
-    <!-- F7 -->
+    <!-- E7 -->
     <div class="ph todo w-150">
-      <span class="pbadge bt">→ Pendiente</span>
-      <div class="pnum">FASE 7 · Sem 11–12</div>
-      <div class="ptitle">API Pública y Webhooks</div>
+      <span class="pbadge bt">→ Próxima etapa</span>
+      <div class="pnum">ETAPA 7 · Semanas 11–12</div>
+      <div class="ptitle">Conexiones con Sistemas Externos</div>
       <div class="pdate">14/07 → 01/08/2026</div>
       <ul class="pbullets">
-        <li>API REST · OpenAPI/Swagger</li>
-        <li>Webhooks configurables por tenant</li>
-        <li>API keys · rate limiting por plan</li>
+        <li>Acceso programático para integraciones empresariales</li>
+        <li>Notificaciones automáticas ante eventos del bot</li>
+        <li>Control de accesos y límites por cliente</li>
       </ul>
     </div>
 
-    <!-- F8 AZURE CRITICO -->
-    <div class="ph critical w-165">
+    <!-- E8 AZURE CRITICO -->
+    <div class="ph critical w-175">
       <span class="pbadge br">→ Hito Crítico</span>
-      <div class="pnum">FASE 8 · Sem 13–16</div>
-      <div class="ptitle">Migración y Validación Azure</div>
+      <div class="pnum">ETAPA 8 · Semanas 13–16</div>
+      <div class="ptitle">Migración a Infraestructura Enterprise en la Nube</div>
       <div class="pdate">03/08 → 12/09/2026</div>
       <ul class="pbullets">
-        <li>Azure Container Apps: Next.js · Dify · n8n</li>
-        <li>PostgreSQL Flexible · Redis Cache · Blob Storage</li>
-        <li>App Gateway + WAF · ISO 27001</li>
-        <li>Validación E2E completa · rollback plan</li>
+        <li>Traslado completo a Microsoft Azure</li>
+        <li>Alta disponibilidad · backups automáticos · escalabilidad</li>
+        <li>Cortafuegos empresarial y protección ante ataques</li>
+        <li>Validación completa antes del lanzamiento oficial</li>
       </ul>
     </div>
 
-    <!-- F9 LAUNCH -->
-    <div class="ph todo w-135">
-      <span class="pbadge bt">→ Launch MVP</span>
-      <div class="pnum">FASE 9 · Sem 17</div>
-      <div class="ptitle">Pulido y Launch</div>
+    <!-- E9 LAUNCH -->
+    <div class="ph todo w-145">
+      <span class="pbadge bt">→ Lanzamiento MVP</span>
+      <div class="pnum">ETAPA 9 · Semana 17</div>
+      <div class="ptitle">Pruebas Finales y Lanzamiento</div>
       <div class="pdate">15/09 → 30/09/2026</div>
       <ul class="pbullets">
-        <li>Testing E2E · Playwright</li>
-        <li>CSP · MFA · Audit log</li>
-        <li>Deploy zero-downtime Azure</li>
-        <li>Onboarding primer cliente</li>
+        <li>Pruebas exhaustivas de todos los flujos críticos</li>
+        <li>Refuerzo de seguridad y accesos</li>
+        <li>Despliegue en producción sin interrupción del servicio</li>
+        <li>Incorporación del primer cliente</li>
       </ul>
     </div>
 
     <!-- V2 -->
-    <div class="ph v2 w-125">
-      <span class="pbadge bv">v2 Post-MVP</span>
+    <div class="ph v2 w-130">
+      <span class="pbadge bv">Segunda fase</span>
       <div class="pnum">POST 30/09/2026</div>
-      <div class="ptitle">Segunda Iteración</div>
-      <div class="pdate">Oct 2026 en adelante</div>
+      <div class="ptitle">Evolución Post-Lanzamiento</div>
+      <div class="pdate">Octubre 2026 en adelante</div>
       <ul class="pbullets">
-        <li>Billing: Free · Starter · Business · Enterprise</li>
-        <li>Multi-CRM: Salesforce · HubSpot · Zoho</li>
-        <li>Inbox de conversaciones</li>
-        <li>Dosier Seguridad v2 — certificación ISO 27001 formal</li>
+        <li>Planes de suscripción y facturación</li>
+        <li>Conexión con otros sistemas CRM del mercado</li>
+        <li>Bandeja de conversaciones del bot</li>
+        <li>Certificación formal ISO 27001</li>
       </ul>
     </div>
 
@@ -436,67 +481,45 @@ body {
   <div class="bottom">
 
     <div class="bcard">
-      <div class="bcard-title">Integraciones Clave</div>
+      <div class="bcard-title">Canales y Sistemas Integrados</div>
       <div class="int-grid">
-        <div class="ibadge"><div class="idot" style="background:#00D68F"></div>Dify v1.13.3</div>
-        <div class="ibadge"><div class="idot" style="background:#00C6E0"></div>Azure OpenAI</div>
-        <div class="ibadge"><div class="idot" style="background:#00C6E0"></div>GPT-4o-mini</div>
-        <div class="ibadge"><div class="idot" style="background:#FFB800"></div>n8n</div>
-        <div class="ibadge"><div class="idot" style="background:#5a80a0"></div>Yeastar PBX</div>
-        <div class="ibadge"><div class="idot" style="background:#00D68F"></div>EspoCRM</div>
         <div class="ibadge"><div class="idot" style="background:#25D366"></div>WhatsApp Business</div>
-        <div class="ibadge"><div class="idot" style="background:#00C6E0"></div>App Gateway + WAF</div>
-      </div>
-    </div>
-
-    <div class="bcard">
-      <div class="bcard-title">Stack Tecnológico</div>
-      <div class="stack-wrap">
-        <span class="sbadge">Next.js 14</span>
-        <span class="sbadge">NextAuth.js</span>
-        <span class="sbadge">TypeScript</span>
-        <span class="sbadge">Prisma ORM</span>
-        <span class="sbadge">PostgreSQL + pgvector</span>
-        <span class="sbadge">Redis</span>
-        <span class="sbadge">Docker</span>
-        <span class="sbadge">Turborepo · pnpm</span>
-        <span class="sbadge">GitHub Actions</span>
-        <span class="sbadge">Row-Level Security</span>
-        <span class="sbadge">RBAC · JWT</span>
-        <span class="sbadge">Azure Container Apps</span>
-        <span class="sbadge">MAGERIT · ISO 27001</span>
-      </div>
-    </div>
-
-    <div class="bcard">
-      <div class="bcard-title">4 Diferenciadores Estratégicos</div>
-      <div class="dif-list">
-        <div class="dif-row"><div class="dif-icon">🔀</div><div><div class="dif-name">Multi-KB Switch</div><div class="dif-desc">N bases de conocimiento por bot · cliente activa desde el panel</div></div></div>
-        <div class="dif-row"><div class="dif-icon">🔒</div><div><div class="dif-name">Multi-Tenant RLS</div><div class="dif-desc">Aislamiento total garantizado en PostgreSQL</div></div></div>
-        <div class="dif-row"><div class="dif-icon">🤝</div><div><div class="dif-name">EspoCRM Nativo</div><div class="dif-desc">Leads · tickets · reclamos en producción</div></div></div>
-        <div class="dif-row"><div class="dif-icon">👁️</div><div><div class="dif-name">Motor IA Oculto</div><div class="dif-desc">Dify invisible · panel 100% white-label</div></div></div>
+        <div class="ibadge"><div class="idot" style="background:#00D68F"></div>CRM EspoCRM</div>
+        <div class="ibadge"><div class="idot" style="background:#00C6E0"></div>Microsoft Azure</div>
+        <div class="ibadge"><div class="idot" style="background:#00C6E0"></div>Inteligencia Artificial (OpenAI)</div>
+        <div class="ibadge"><div class="idot" style="background:#5a80a0"></div>Central Telefónica Yeastar</div>
+        <div class="ibadge"><div class="idot" style="background:#FFB800"></div>Motor de automatización n8n</div>
+        <div class="ibadge"><div class="idot" style="background:#00C6E0"></div>Cortafuegos y protección web</div>
       </div>
     </div>
 
     <div class="bcard">
       <div class="bcard-title">Casos de Uso — ValerIA en Producción</div>
+      <div class="casos-list">
+        <div class="caso-row"><div class="caso-icon">📋</div><div><div class="caso-name">Captura de Leads</div><div class="caso-desc">Nombre · empresa · RUC · sector · producto de interés → CRM automático</div></div></div>
+        <div class="caso-row"><div class="caso-icon">🎫</div><div><div class="caso-name">Soporte Técnico</div><div class="caso-desc">Genera ticket con número de caso y descripción del problema</div></div></div>
+        <div class="caso-row"><div class="caso-icon">📣</div><div><div class="caso-name">Reclamos Formales</div><div class="caso-desc">Registra el reclamo con categoría y detalle en el sistema</div></div></div>
+        <div class="caso-row"><div class="caso-icon">🔀</div><div><div class="caso-name">Derivación a Agente</div><div class="caso-desc">Escala automáticamente cuando el caso requiere intervención humana</div></div></div>
+      </div>
+    </div>
+
+    <div class="bcard">
+      <div class="bcard-title">4 Ventajas Competitivas</div>
       <div class="dif-list">
-        <div class="dif-row">
-          <div class="dif-icon">📋</div>
-          <div><div class="dif-name">Captura de Leads</div><div class="dif-desc">Nombre · empresa · RUC · sector · vertical · ubicación → EspoCRM automático</div></div>
-        </div>
-        <div class="dif-row">
-          <div class="dif-icon">🎫</div>
-          <div><div class="dif-name">Soporte Técnico</div><div class="dif-desc">Generación de tickets con número de caso → TicketValerIA en EspoCRM</div></div>
-        </div>
-        <div class="dif-row">
-          <div class="dif-icon">📣</div>
-          <div><div class="dif-name">Gestión de Reclamos</div><div class="dif-desc">Registro formal con categoría y descripción → ReclamoValerIA en EspoCRM</div></div>
-        </div>
-        <div class="dif-row">
-          <div class="dif-icon">🔀</div>
-          <div><div class="dif-name">Derivación a Agente</div><div class="dif-desc">Escalamiento automático cuando debe_derivar=true · cierre por inactividad 3 estados</div></div>
-        </div>
+        <div class="dif-row"><div class="dif-icon">🔀</div><div><div class="dif-name">Bases de Conocimiento Flexibles</div><div class="dif-desc">El administrador cambia el conocimiento del bot según la campaña o contexto</div></div></div>
+        <div class="dif-row"><div class="dif-icon">🔒</div><div><div class="dif-name">Aislamiento Total entre Clientes</div><div class="dif-desc">Cada cliente ve y gestiona únicamente su información, sin excepciones</div></div></div>
+        <div class="dif-row"><div class="dif-icon">🤝</div><div><div class="dif-name">CRM Integrado desde el Día 1</div><div class="dif-desc">Leads, tickets y reclamos fluyen automáticamente al CRM sin intervención manual</div></div></div>
+        <div class="dif-row"><div class="dif-icon">👁️</div><div><div class="dif-name">Tecnología Invisible al Cliente</div><div class="dif-desc">El cliente gestiona todo desde un panel propio — sin ver la tecnología subyacente</div></div></div>
+      </div>
+    </div>
+
+    <div class="bcard">
+      <div class="bcard-title">Compromisos de Seguridad</div>
+      <div class="seg-list">
+        <div class="seg-row"><div class="seg-icon">🛡️</div><div><div class="seg-name">Datos aislados por cliente</div><div class="seg-desc">Ningún cliente accede a información de otro, garantizado a nivel de base de datos</div></div></div>
+        <div class="seg-row"><div class="seg-icon">☁️</div><div><div class="seg-name">Infraestructura Microsoft Azure</div><div class="seg-desc">Alta disponibilidad, backups automáticos y protección ante ataques en la nube</div></div></div>
+        <div class="seg-row"><div class="seg-icon">📄</div><div><div class="seg-name">Dosier de Seguridad oficial</div><div class="seg-desc">Documentación de cumplimiento normativo entregada junto al producto final</div></div></div>
+        <div class="seg-row"><div class="seg-icon">🔐</div><div><div class="seg-name">Accesos con doble control</div><div class="seg-desc">Roles diferenciados y autenticación segura para todos los usuarios del panel</div></div></div>
       </div>
     </div>
 
@@ -517,7 +540,7 @@ body {
   <div class="footer">
     <div class="footer-brand">Bestsol Perú · ValerIA</div>
     <div class="footer-mid">Inicio: 30/04/2026 · Hoy: 05/06/2026 · Meta MVP: 30/09/2026 · Semana 6 de 23</div>
-    <div class="footer-tag">v1.0 · Junio 2026</div>
+    <div class="footer-tag">Versión Gerencial · Junio 2026</div>
   </div>
 
 </div><!-- /card -->
@@ -544,7 +567,7 @@ async function descargar() {
       scrollY: 0,
     });
     const a = document.createElement('a');
-    a.download = 'Roadmap_ValerIA_Bestsol_2026.png';
+    a.download = 'Roadmap_ValerIA_Gerencial_2026.png';
     a.href = canvas.toDataURL('image/png');
     document.body.appendChild(a);
     a.click();
