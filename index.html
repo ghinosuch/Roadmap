@@ -26,7 +26,7 @@ body {
 
 /* ── CARD ── */
 #card {
-  width: 1600px;
+  width: 1840px;
   background: #0c1a2e;
   border-radius: 18px; border: 1px solid #1c3050;
   padding: 34px 36px 28px;
@@ -130,12 +130,12 @@ body {
 .critical::before { background: #FF4D6D; }
 
 /* widths — total 1600 - 72px padding = 1528, 9 gaps × 7 = 63, content = 1465 */
-.w-190 { width: 190px; }
-.w-135 { width: 135px; }
-.w-125 { width: 125px; }
-.w-155 { width: 155px; }
-.w-165 { width: 165px; }
-.w-150 { width: 150px; }
+.w-190 { width: 175px; }
+.w-135 { width: 130px; }
+.w-125 { width: 148px; }
+.w-155 { width: 148px; }
+.w-165 { width: 155px; }
+.w-150 { width: 145px; }
 
 .pbadge { display: inline-block; font-family: 'DM Mono', monospace; font-size: 8px; font-weight: 500; letter-spacing: .5px; text-transform: uppercase; padding: 2px 7px; border-radius: 10px; border: 1px solid; margin-bottom: 5px; }
 .bd { background: rgba(0,214,143,.12); color: #00D68F; border-color: rgba(0,214,143,.3); }
@@ -526,7 +526,7 @@ async function descargar() {
       logging: false,
       width: card.scrollWidth,
       height: card.scrollHeight,
-      windowWidth: card.scrollWidth,
+      windowWidth: 1840,
       windowHeight: card.scrollHeight,
       scrollX: 0,
       scrollY: 0,
