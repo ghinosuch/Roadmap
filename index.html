@@ -26,7 +26,7 @@ body {
 
 /* ── CARD ── */
 #card {
-  width: 1840px;
+  width: 2000px;
   background: #0c1a2e;
   border-radius: 18px; border: 1px solid #1c3050;
   padding: 34px 36px 28px;
@@ -546,12 +546,20 @@ body {
 </div><!-- /card -->
 
 <script>
+window.onload = function() { console.log("html2canvas ready:", typeof html2canvas); };
 async function descargar() {
   const btn = document.getElementById('dl-btn');
   btn.disabled = true;
   btn.textContent = 'Generando imagen...';
   btn.style.display = 'none';
   const card = document.getElementById('card');
+  if (typeof html2canvas === 'undefined') {
+    alert('La librería de captura no cargó. Verifica tu conexión a internet y recarga la página.');
+    btn.style.display = '';
+    btn.disabled = false;
+    btn.textContent = '⬇ Descargar Infografía';
+    return;
+  }
   try {
     const canvas = await html2canvas(card, {
       scale: 2,
@@ -561,7 +569,7 @@ async function descargar() {
       logging: false,
       width: card.scrollWidth,
       height: card.scrollHeight,
-      windowWidth: 1840,
+      windowWidth: 2000,
       windowHeight: card.scrollHeight,
       scrollX: 0,
       scrollY: 0,
