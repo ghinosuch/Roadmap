@@ -14,9 +14,10 @@ body {
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
   min-height: 100vh;
+  overflow-x: auto;
 }
 
 /* ─── DOWNLOAD BUTTON ─────────────────────────────────────── */
@@ -46,7 +47,7 @@ body {
   border: 1px solid #1c3050;
   padding: 36px 36px 30px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 /* subtle grid bg */
 #card::after {
@@ -113,7 +114,7 @@ body {
 .prog-bar-bg {
   background: #060f1e;
   border: 1px solid #1c3050;
-  border-radius: 6px; height: 10px; overflow: hidden;
+  border-radius: 6px; height: 10px; overflow: visible;
 }
 .prog-bar-fill {
   height: 100%; width: 58%;
@@ -151,7 +152,7 @@ body {
   border: 1px solid;
   padding: 11px 10px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -585,14 +586,24 @@ async function descargar() {
   const btn = document.getElementById('dl-btn');
   btn.disabled = true;
   btn.textContent = 'Generando imagen...';
+  const card = document.getElementById('card');
+  // hide button temporarily so it doesn't appear in image
+  btn.style.display = 'none';
   try {
-    const canvas = await html2canvas(document.getElementById('card'), {
+    const realW = card.scrollWidth;
+    const realH = card.scrollHeight;
+    const canvas = await html2canvas(card, {
       scale: 2,
       backgroundColor: '#0c1a2e',
       useCORS: true,
       allowTaint: true,
       logging: false,
-      windowWidth: 1440,
+      width: realW,
+      height: realH,
+      windowWidth: realW,
+      windowHeight: realH,
+      scrollX: 0,
+      scrollY: 0,
     });
     const a = document.createElement('a');
     a.download = 'Roadmap_Bestsol_AI_Platform_2026.png';
@@ -601,8 +612,9 @@ async function descargar() {
     a.click();
     document.body.removeChild(a);
   } catch(e) {
-    alert('Error al generar la imagen: ' + e.message);
+    alert('Error: ' + e.message);
   }
+  btn.style.display = '';
   btn.disabled = false;
   btn.textContent = '⬇ Descargar Infografía';
 }
